@@ -41,16 +41,17 @@ Mac 的安装方法。
 ## 启动与帮助
 安装完成后，就可以启动 Fish。
 
-
-` $ fish`
+```
+$ fish
+```
 
 由于 Fish 的语法与 Bash 有很大差异，Bash 脚本一般不兼容。因此，我建议不要将 Fish 设为默认 Shell，而是每次手动启动它。
 
 使用过程中，如果需要帮助，可以输入help命令。浏览器就会自动打开，显示在线文档。
 
-
-` $ help`
-
+```
+$ help
+```
 ## 彩色显示
 进入 Fish 以后，你注意到的第一件事，可能就是它默认彩色显示。
 
@@ -68,7 +69,6 @@ Fish 会自动在光标后面给出建议，表示可能的选项，颜色为灰
 
 ## 自动补全
 输入命令时，Fish 会自动显示匹配的上一条历史记录。
-
 
 `$ git commit -m "feat: first commit"`
 
@@ -105,7 +105,6 @@ Fish 还可以自动补全 Git 分支。
 Fish 的语法非常自然，一眼就能看懂。
 
 + if语句
-
 ```
 if grep fish /etc/shells
     echo Found fish
@@ -116,8 +115,8 @@ else
 end
 ```
 
-+ switch语句
 
++ switch语句
 ```
 switch (uname)
 case Linux
@@ -131,16 +130,16 @@ case '*'
 end
 ```
 
-+ while循环
 
++ while循环
 ```
 while true
     echo "Loop forever"
 end
 ```
 
-+ for循环
 
++ for循环
 ```
 for file in *.txt
     cp $file $file.bak
@@ -189,15 +188,18 @@ end
 ## 配置
 Fish 的配置文件是
 
-`~/.config/fish/config.fish`
-
+```
+~/.config/fish/config.fish
+```
 每次 Fish 启动，就会自动加载这个文件。
 
 我们可以在这个文件里面写入各种自定义函数，它们会被自动加载。比如，上面的fish_prompt函数就可以写在这个文件里面，这样每次启动 Fish，就会出现自定义的提示符。
 
 Fish 还提供 Web 界面配置该文件。
 
-`$ fish_config`
+```
+$ fish_config
+```
 
 输入上面的命令以后，浏览器就会自动打开本机的 8000 端口，用户可以在网页上对 Fish 进行配置，比如选择提示符和配色主题。
 
