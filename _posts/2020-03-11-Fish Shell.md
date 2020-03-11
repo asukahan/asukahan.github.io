@@ -34,7 +34,7 @@ $ sudo apt-get install fish
 
 Mac 的安装方法。
 ```
-$ brew install fish`
+$ brew install fish
 ```
 
 其他系统的安装请参考[官方网站](https://fishshell.com/)。
